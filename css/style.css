@@ -1,3 +1,152 @@
-h1{
-    color: orange;
+:root{
+    --Purple: #9356DC;
+    --Pink: #FF79DA;
+    --Green: #99E2D0;
+}
+/*Base*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 2560px;
+}
+@media screen and (min-width: 1800px) {
+  .main {
+    max-width: 1800px;
+    margin: auto;
+  }
+}
+
+.fas {
+  margin-right: 20px;
+}
+
+h1 {
+  color: #9356DC;
+}
+
+/* CHARGEMENT */
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    animation: loader 3s forwards;
+}
+
+.animation {
+    margin: auto;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Animation loader*/
+
+  .animation div {
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: animation 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .animation div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+    background-color: var(--Purple);
+  }
+  .animation div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+    background-color: var(--Pink);
+  }
+  .animation div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+    background-color: var(--Green);
+  }
+
+@keyframes loader {
+    0%, 75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
+@keyframes animation {
+    0% {
+        top: 8px;
+        height: 64px;
+    }
+    50%, 100% {
+        top: 24px;
+        height: 32px;
+    }
+}
+
+
+
+/*Footer*/
+footer {
+  background-color: #353535;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0px;
+  max-width: 100%;
+  min-width: 320px;
+}
+
+footer a, footer h3 {
+  text-decoration: none;
+  color: #e6e6e6;
+  margin: 0 0 10px 20px;
+  font-size: 18px;
+}
+
+footer ul li{
+    margin: 10px 0;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+footer .footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
