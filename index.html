@@ -36,131 +36,142 @@
 <main class="main">
     <!-- MAPS -->
     <div class="maps">
-    <span>
         <i class="fas fa-map-marker-alt"></i>
-    </span>
-        <span class="maps-search">
-        <input type="search" name="city" value="Paris, Belleville" placeholder="Votre ville">
+    <span class="maps-search">
+        Paris, Belleville
     </span>
     </div>
 
     <!-- A PROPOS -->  
     <div class="about">
-        <h2> Réservez le menu qui vous convient </h2>
+        <p class="about-presentation"> Réservez le menu qui vous convient </p>
         <p> Découvrez des restaurants d'exception, sélectionnés par nos soins </p>
-        <span class="about-btn">
-            <button> Explorer nos restaurants </button>
-        </span>
+        <a class="about-btn">Explorer nos restaurants</a>
     </div>
 
     <!-- FONCTIONNEMENT -->
     <section class="fonctionnement">
         <h2>Fonctionnement</h2>
-        <ul class="fonctionnement-etapes">
-            <li>
-                <div class="fonctionnement-etapes--number">1</div>
-                <div><i class="fas fa-mobile-alt operation__steps--icon"></i></div>
-                <p>Choisissez un restaurant</p>
-            </li>
-            <li>
-                <div class="fonctionnement-etapes--number">2</div>
-                <div><i class="fas fa-list-ul operation__steps--icon"></i></div>
-                <p>Composez votre menu</p>
-            </li>
-            <li>
-                <div class="fonctionnement-etapes--number">3</div>
-                <div><i class="fas fa-store operation__steps--icon"></i></div>
-                <p>Dégustez au restaurant</p>
-            </li>
-        </ul>
+            <ul class="fonctionnement-etapes">
+                <li>
+                    <div class="fonctionnement-etapes--nombre">1</div>
+                    <div class="li-wrap">
+                        <div><i class="fas fa-mobile-alt operation__steps--icon"></i></div>
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="fonctionnement-etapes--nombre">2</div>
+                    <div class="li-wrap">
+                        <div><i class="fas fa-list-ul operation__steps--icon"></i></div>
+                        <p>Composez votre menu</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="fonctionnement-etapes--nombre">3</div>
+                    <div class="li-wrap">
+                        <div><i class="fas fa-store operation__steps--icon"></i></div>
+                        <p>Dégustez au restaurant</p>
+                    </div>
+                </li>
+            </ul>
     </section>
 
     <!-- Section Restaurants -->
-    <section class="restaurant">
+    <section class="restaurants">
+        <div class="restaurants-title">
+            <h2>Restaurants</h2>
+        </div>
         <div class="main-restaurant">
-            <div class="restaurant-title">
-                <h3>Restaurants</h3>
-            </div>
-            <div class="card">
-                <div class="card-btn">
-                    <span class="new"> Nouveau </span>
-                </div>
-
-                <a href="pages/la-palette-du-gout.html">
-                    <figure>
-                        <img src="images/restaurants/menu-palette-gout.jpg" alt="restaurant la palette du gout">
-                        <figcaption>
-                            <div class="heart">
-                                <h4>La palette du goût</h4>
-                                <div class="fill-heart">
-                                    <span><i class="fill far fa-heart fa-2x"></i></span>
-                                </div>
-                            </div>
+            <a href="pages/la-palette-du-gout.html">
+                <div class="restaurants__card">
+                    <div class="restaurants__card__image">
+                        <img src="images/restaurants/menu-palette-gout.jpg"
+                            alt="La Palette du goût">
+                        <div class="btn-new">Nouveau</div>
+                    </div>
+                    <div class="restaurants__card__content">
+                        <div class="restaurants_card__content__name">
+                            <h3>La Palette du goût</h3>
                             <p>Ménilmontant</p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="card">
-                <div class="card-btn">
-                    <span class="new"> Nouveau </span>
-                </div>
-
-                <a href="pages/la-note-enchantee.html">
-                    <figure>
-                        <img src="images/restaurants/menu-note-enchantee.jpg" alt="restaurant la note enchantee">
-                        <figcaption>
-                            <div class="heart">
-                                <h4>La note enchantée</h4>
-                                <div class="fill-heart">
-                                    <span><i class="fill far fa-heart fa-2x"></i></span>
-                                </div>
+                        </div>
+                        <div class="heart">
+                            <div class="heart__1">
+                                <i class="far fa-heart fa-2x"></i>
                             </div>
+                            <div class="heart__2">
+                                <i class="fas fa-heart fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="pages/la-note-enchantee.html">
+                <div class="restaurants__card">
+                    <div class="restaurants__card__image">
+                        <img src="images/restaurants/menu-note-enchantee.jpg" alt="La Palette du goût">
+                        <div class="btn-new">Nouveau</div>
+                    </div>
+                    <div class="restaurants__card__content">
+                        <div class="restaurants_card__content__name">
+                            <h3>Le note enchantée</h3>
                             <p>Charonne</p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="card">
-                <div class="card-btn">
-                    <span class="new"> Nouveau </span>
-                </div>
-
-                <a href="pages/a-la-francaise.html">
-                    <figure>
-                        <img src="images/restaurants/menu-francaise.jpg" alt="restaurant a la francaise">
-                        <figcaption>
-                            <div class="heart">
-                                <h4>A la française</h4>
-                                <div class="fill-heart">
-                                    <span><i class="fill far fa-heart fa-2x"></i></span>
-                                </div>
+                        </div>
+                        <div class="heart">
+                            <div class="heart__1">
+                                <i class="far fa-heart fa-2x"></i>
                             </div>
+                            <div class="heart__2">
+                                <i class="fas fa-heart fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="pages/a-la-francaise.html">
+                <div class="restaurants__card">
+                    <div class="restaurants__card__image">
+                        <img src="images/restaurants/menu-francaise.jpg"
+                            alt="La Palette du goût">
+                    </div>
+                    <div class="restaurants__card__content">
+                        <div class="restaurants_card__content__name">
+                            <h3>A la française</h3>
                             <p>Cité Rouge</p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="card">
-                <div class="card-btn">
-                    <span class="new"> Nouveau </span>
-                </div>
-
-                <a href="pages/le-delice-des-sens.html">
-                    <figure>
-                        <img src="images/restaurants/menu-delice-sens.jpg" alt="Restaurant Le délice des sens">
-                        <figcaption>
-                            <div class="heart">
-                                <h4>Le délice des sens</h4>
-                                <div class="fill-heart">
-                                    <span><i class="fill far fa-heart fa-2x"></i></span>
-                                </div>
+                        </div>
+                        <div class="heart">
+                            <div class="heart__1">
+                                <i class="far fa-heart fa-2x"></i>
                             </div>
+                            <div class="heart__2">
+                                <i class="fas fa-heart fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="pages/le-delice-des-sens.html">
+                <div class="restaurants__card">
+                    <div class="restaurants__card__image">
+                        <img src="images/restaurants/menu-delice-sens.jpg"
+                            alt="La Palette du goût">
+                    </div>
+                    <div class="restaurants__card__content">
+                        <div class="restaurants_card__content__name">
+                            <h3>Le délice des sens</h3>
                             <p>Folie-Méricourt</p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
+                        </div>
+                        <div class="heart">
+                            <div class="heart__1">
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                            <div class="heart__2">
+                                <i class="fas fa-heart fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
 </main>
